@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+    <div class="container">
+      <input class="inputTask" placeholder="O que tenho que fazer..." />
+      <button class="buttonAddTask">Adicionar</button>
+      <div class="prioritySelect">
+        <label>
+          <input type="radio" name="priority" value="leve"> Leve
+        </label>
+        <label>
+          <input type="radio" name="priority" value="moderado"> Moderado
+        </label>
+        <label>
+          <input type="radio" name="priority" value="urgente"> Urgente
+        </label>
+      </div>
+
+      <ul class="listTask"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

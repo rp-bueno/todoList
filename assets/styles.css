@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+body {
+  background: url("./img/background3.jpeg");
+}
+
+.container {
+  background-color: #d1d1d1;
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 0;
+}
+
+.container.dark {
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+}
+
+.container.dark .inputTask {
+  background-color: #444;
+  color: #f5f5f5;
+}
+
+.container.dark .buttonAddTask {
+  background-color: #0a5c4a;
+}
+
+.container.dark .task {
+  background-color: #3b3b3b;
+}
+
+.container.dark .done {
+  background-color: #607d3b;
+}
+
+.inputTask {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.buttonAddTask {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #003329;
+  color: #fff;
+  font-size: 17px;
+  padding: 0 15px;
+  float: right;
+  cursor: pointer;
+}
+
+.buttonAddTask:hover {
+  opacity: 0.8;
+}
+
+.buttonAddTask:active {
+  opacity: 0.6;
+}
+
+.listTask {
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.task {
+  background-color: #f2f2f2;
+  box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+img {
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.task:hover img {
+  opacity: 1;
+}
+
+.done {
+  background-color: #8fac55;
+  text-decoration: line-through;
+}
+
+.task[draggble=true] {
+  cursor: grab;
+}
+
+.task:active {
+  opacity: 0.5;
+}
+
+.task p {
+  flex: 1;
+  margin: 0 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.task small {
+  display: block;
+  margin-left: 50px;
+  margin-right: auto;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.taks img:last-child {
+  margin-left: 10px;
+}
+
+.prioritySelect {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.priority-leve {
+  border-left: 8px solid #09ff00;
+}
+
+.priority-moderado {
+  border-left: 8px solid #ffa600;
+}
+
+.priority-urgente {
+  border-left: 8px solid #ff0000;
+}
